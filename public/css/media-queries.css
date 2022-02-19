@@ -1,0 +1,122 @@
+/* Mobile Navigation Code */
+@media screen and (max-width: 1275px) {
+    .school-socials {
+        display: none;
+    }
+    .header-content {
+        width: 100%;
+        padding: 0;
+    }
+    .nav-container {
+        width: 100%;
+        padding: 0 1rem 0 0;
+    }
+    .nav-links {
+        height: 100vh;
+        width: 70%;
+        opacity: 1;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        left: -150%;
+        background-color: #fff;
+        z-index: 80;
+        transition: all 200ms cubic-bezier(0.59, 0.41, 0, 0.76);
+    }
+    .nav-links.show {
+        width: 70%;
+        opacity: 1;
+        display: flex;
+        left: 0;
+        transition: all 200ms cubic-bezier(0.59, 0.41, 0, 0.76);
+    }
+    .nav-links .links {
+        flex-direction: column;
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .nav-links .links li {
+        width: 100%;
+        margin: 0;
+        height: auto;
+    }
+    .nav-links .links .link {
+        width: 100%;
+        height: 5rem;
+        display: flex;
+        justify-content: center;
+    }
+    .crum-arrow.nav {
+        display: none;
+    }
+    .links-list .link {
+        width: 100%;
+        max-width: initial;
+    }
+    .list-more .link {
+        width: 100%;
+        max-width: initial;
+    }
+    /* .sticky .nav-links {
+      margin-top: 4.2rem;
+    } */
+    #nav-icon2 {
+        display: block;
+    }
+    .list-more-drop {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .main-news-updates {
+        flex: 2;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0;
+    }
+    .dots-holder {
+        margin-top: 1px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .navigate-left,
+    .navigate-right {
+        align-items: flex-end;
+        padding-bottom: 135px;
+    }
+    .landing-btn {
+        bottom: 13%;
+    }
+    .house-title,
+    .house-text {
+        padding-left: 0;
+        min-width: 200px;
+    }
+    .courses-holder {
+        width: 100%;
+    }
+
+    .row.no-top {
+        /* padding: 1em 1em; */
+    }
+}
+
+/* Main Page Media Query (Index Page) */
+@media screen and (max-width: 500px) {
+    .section-alumni {
+        height: auto;
+        min-height: 80vh;
+    }
+
+    .main-content-holder {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 400px) {
+    .housing-img {
+        min-width: 200px;
+    }
+}
